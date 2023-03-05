@@ -1,0 +1,4 @@
+---
+pki_ca_domain: 'int.schmidthaus.rocks'
+pki_ca_organization: 'Schmidthaus'
+pki_system_realm: 'int.schmidthaus.rocks'

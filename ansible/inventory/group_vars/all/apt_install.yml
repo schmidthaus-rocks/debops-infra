@@ -1,0 +1,7 @@
+---
+apt_install__packages:
+  - 'neovim'
+
+apt_install__alternatives:
+  - name: 'editor'
+    path: '/usr/bin/neovim'

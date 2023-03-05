@@ -1,0 +1,17 @@
+---
+resources__host_files:
+  - src: '/home/john/.config/gh/controller-gh-token.txt'
+    dest: '/home/_ansible/.config/gh/gh-token.txt'
+    owner: '_ansible'
+    group: '_ansible'
+    mode: '0640'
+  - src: '/home/john/Projects/debops/.gnupg'
+    dest: '/home/_ansible/.gnupg'
+    owner: '_ansible'
+    group: '_ansible'
+    mode: '700'
+
+resources__host_commands:
+  - name: 'Login to Github with root account'
+    command: 'gh auth login --git-protocol https --with-token < /home/_ansible/.config/gh/gh-token.txt'
+    creates: '/home/_ansible/.config/gh/hosts.yml'

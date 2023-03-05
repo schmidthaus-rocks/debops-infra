@@ -1,0 +1,3 @@
+---
+apt__sources:
+  - 'http://mirror.it.ubc.ca/debian'

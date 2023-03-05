@@ -1,0 +1,4 @@
+---
+nullmailer__relayhost: ''
+nullmailer__packages:
+  - 'python3-dnspython'

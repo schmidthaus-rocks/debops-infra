@@ -1,0 +1,11 @@
+---
+controller__project_git_repo: 'https://github.com/schmidthaus-rocks/debops-infra.git'
+
+controller__install_systemwide: False
+
+controller__packages:
+  - 'build-essential'
+  - 'libpython3-dev'
+  - 'libsasl2-dev'
+  - 'libldap2-dev'
+  - 'libssl-dev'

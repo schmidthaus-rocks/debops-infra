@@ -1,0 +1,6 @@
+---
+apt__host_keys:
+  - url: 'https://cli.github.com/packages/githubcli-archive-keyring.gpg'
+
+apt__host_repositories:
+  - repo: 'deb https://cli.github.com/packages stable main'

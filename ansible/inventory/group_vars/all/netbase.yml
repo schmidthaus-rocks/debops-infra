@@ -1,0 +1,4 @@
+---
+netbase__domain: 'int.schmidthaus.rocks'
+netbase__networks:
+  "int.schmidthaus.rocks": "192.168.1.0/24"

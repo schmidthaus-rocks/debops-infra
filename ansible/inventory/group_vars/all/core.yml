@@ -1,0 +1,4 @@
+---
+core__ansible-controllers:
+  - "192.168.1.29"
+#core__admin_private_email: []
