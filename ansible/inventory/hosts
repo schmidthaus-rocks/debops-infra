@@ -20,6 +20,16 @@
 controller ansible_host=localhost ansible_connection=local
 controller ansible_user=_ansible system_users__self_name=_ansible
 
+[debops_all_hosts:children]
+lxd_hosts
+lxd_containers
+
+[debops_service_lxd:children]
+lxd_hosts
+
+[lxd_hosts]
+lxd0.int.schmidthaus.rocks ansible_host=192.168.1.20
+
 [debops_service_controller]
 controller
 

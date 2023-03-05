@@ -1,0 +1,57 @@
+---
+lxd__upstream_enabled: True
+lxd__upstream_git_release: 'stable-5.0'
+lxd__packages: [
+  'qemu',
+  'qemu-system-x86',
+  'qemu-utils',
+  'qemu-block-extra',
+  'qemu-system'
+]
+lxd__group_preseed: [
+  - name: 'server-default'
+    seed:
+      config: {}
+
+  - name: 'network-default'
+    seed:
+      networks:
+        - name: 'lxdbr0'
+          config:
+            ipv4.address: 'auto'
+            ipv6.address: 'none'
+          description: ''
+          managed: True
+          type: ''
+
+  - name: 'storage-default'
+    seed:
+      storage_pools:
+        - name: 'default'
+          config: {
+            source: '/data/lxd'
+          }
+          description: ''
+          driver: 'btrfs'
+
+  - name: 'profile-default'
+    seed:
+      profiles:
+        - name: 'default'
+          config: {}
+          description: ''
+          devices:
+            eth0:
+              name: 'eth0'
+              nictype: 'bridged'
+              parent: 'lxdbr0'
+              type: 'nic'
+            root:
+              path: '/'
+              pool: 'default'
+              type: 'disk'
+
+  - name: 'cluster-default'
+    seed:
+      cluster: null
+]
