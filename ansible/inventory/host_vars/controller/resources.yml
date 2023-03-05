@@ -1,6 +1,6 @@
 ---
 resources__host_files:
-  - src: './ansible/secret/controller-gh-token.txt'
+  - src: '/home/john/Projects/debops-infra/ansible/secret/controller-gh-token.txt'
     dest: '/home/_ansible/.config/gh/gh-token.txt'
     owner: '_ansible'
     group: '_ansible'
