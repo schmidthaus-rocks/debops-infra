@@ -1,0 +1,5 @@
+---
+dnsmasq__dhcpv6: false
+dnsmasq__nameservers: [
+  '192.168.1.23'
+]

@@ -36,4 +36,13 @@ controller
 [lxc_containers]
 controller
 
+[debops_service_dnsmasq]
+lxd0.int.schmidthaus.rocks
+
+[debops_service_rsyslog]
+lxd0.int.schmidthaus.rocks
+
+[lxd_containers]
+
+
 [local_containers]

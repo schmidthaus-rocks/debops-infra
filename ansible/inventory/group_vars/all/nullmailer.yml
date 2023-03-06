@@ -1,4 +1,5 @@
 ---
-nullmailer__relayhost: ''
+nullmailer__relayhost: 'lxd0.int.schmidthaus.rocks'
+nullmailer__smtp_port: 42
 nullmailer__packages:
   - 'python3-dnspython'

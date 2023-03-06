@@ -1,0 +1,6 @@
+---
+apt__group_keys:
+  - url: 'https://apt.calenhad.com/debian/calenhad.gpg'
+
+apt__group_repositories:
+  - repo: 'deb http://apt.calenhad.com/debian bullseye main'

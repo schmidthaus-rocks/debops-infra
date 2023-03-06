@@ -3,3 +3,4 @@ system_users__accounts:
   - name: '_ansible'
     sshkeys:
       - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINNdPEsGb7NmcsVUf8dGfDJAlck3CsTh4fNoOuOVZmGY john@linuxtech"
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINxQo2oKYifQTJMVuCFRF2aIAvPx1xplUuW1g/z/M5nF _ansible@controller"

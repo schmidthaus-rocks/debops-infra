@@ -4,3 +4,4 @@ apt_install__host_packages:
   - 'git'
   - 'gpg'
   - 'git-crypt'
+  - 'sshpass'
